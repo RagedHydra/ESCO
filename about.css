@@ -243,7 +243,17 @@ header {
 
 .clients {
   text-align: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 42px;
+  margin: 100px;
+}
+
+.client-img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .clients > h2 {
