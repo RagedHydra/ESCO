@@ -208,7 +208,7 @@ button > a {
   background: white;
   width: 270px;
   height: 450px;
-  margin: 50px;
+  margin: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: transform 0.1s;
@@ -263,6 +263,14 @@ button > a {
 
 .card-4 {
   background-image: url(https://t3.ftcdn.net/jpg/02/39/48/90/360_F_239489017_dVQ3GqwS28SMNerVR5rY7EdJqT6t326X.jpg);
+}
+
+.card-5 {
+  background-image: url(https://victorygse.com/wp-content/uploads/2019/11/victory_gse.jpg);
+}
+
+.card-6 {
+  background-image: url(https://www.euractiv.com/wp-content/uploads/sites/2/2020/12/50587467542_ec541c1b0d_k-800x450.jpg);
 }
 
 @media only screen and (max-width: 450px) {
@@ -342,11 +350,11 @@ button > a {
 }
 
 .client-img > img {
-  margin: 2rem;
+  /* margin: 2rem; */
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100px;
-  width: 250px;
+  height: 300px;
+  width: 800px;
 }
 
 @media only screen and (max-width: 450px) {
