@@ -283,6 +283,14 @@ header {
     align-items: center;
     flex-direction: column;
   }
+
+   .client-img > img {
+    /* margin: 2rem; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 9rem;
+    width: 18rem;
+  }
 }
 
 /* Footer */
