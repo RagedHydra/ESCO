@@ -206,8 +206,8 @@ button > a {
   flex-direction: column;
   justify-content: space-between;
   background: white;
-  width: 270px;
-  height: 450px;
+  width: 12rem;
+  height: 22rem;
   margin: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -243,7 +243,7 @@ button > a {
 
 .card-img {
   height: 5rem;
-  width: 13.5rem;
+  width: 12rem;
   background-color: aqua;
   /* margin-bottom: 15px; */
   background-size: cover;
