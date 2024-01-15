@@ -31,7 +31,7 @@ header {
 .overlay__content a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: #0088a9;
+  color: #335c81;
   text-decoration: none;
 }
 
@@ -264,11 +264,11 @@ header {
 }
 
 .client-img > img {
-  margin: 2rem;
+  /* margin: 2rem; */
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100px;
-  width: 250px;
+  height: 300px;
+  width: 800px;
 }
 
 @media only screen and (max-width: 450px) {
