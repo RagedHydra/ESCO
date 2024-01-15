@@ -1,132 +1,9 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+
 body,
 html {
   height: 100%;
@@ -260,139 +137,148 @@ header {
 }
 
 /* HERO */
-#hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(https://www.oceanindependence.com/sites/default/files/images/aviation/Booking%20a%20private%20jet-min.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 80%;
-  /* margin-bottom: 2rem; */
+@media only screen and (min-width: 992px) {
+  #hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(https://www.oceanindependence.com/sites/default/files/images/aviation/Booking%20a%20private%20jet-min.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 80%;
+    /* margin-bottom: 2rem; */
+  }
+
+  #hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  #hero-text > p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    background-color: #335c81;
+    border: none;
+    color: white;
+    padding: 0.7rem;
+    cursor: pointer;
+    width: 10rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+  button:hover {
+    background-color: #1b2845;
+  }
+
+  button > a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Services */
+  #services {
+    text-align: center;
+    padding: 42px;
+  }
+
+  #services > h2 {
+    display: block;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  #cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    width: 270px;
+    height: 450px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.1s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card h2 {
+    padding: 10px;
+  }
+
+  .card p {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card a {
+    background-color: #335c81;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-decoration: none;
+  }
+
+  .card a:hover {
+    background-color: #1b2845;
+  }
+
+  .card-img {
+    height: 8rem;
+    width: 13.5rem;
+    background-color: aqua;
+    /* margin-bottom: 15px; */
+    background-size: cover;
+    border-radius: 8px;
+  }
 }
 
-#hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-#hero-text > p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-button {
-  background-color: #335c81;
-  border: none;
-  color: white;
-  padding: 0.7rem;
-  cursor: pointer;
-  width: 10rem;
-  margin: 0.5rem;
-  border-radius: 8px;
-  font-size: 18px;
-}
-
-button:hover {
-  background-color: #1b2845;
-}
-
-button > a {
-  text-decoration: none;
-  color: white;
-}
-
-/* Services */
-#services {
-  text-align: center;
-  padding: 42px;
-}
-
-#services > h2 {
-  display: block;
-  margin-bottom: 2rem;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-#cards {
-  display: flex;
-  justify-content: center;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: white;
-  width: 270px;
-  height: 450px;
-  margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: transform 0.1s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card h2 {
-  padding: 10px;
-}
-
-.card p {
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.card a {
-  background-color: #335c81;
-  color: white;
-  padding: 15px 20px;
-  display: block;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  text-decoration: none;
-}
-
-.card a:hover {
-  background-color: #1b2845;
-}
-
-.card-img {
-  height: 5rem;
-  width: 13.5rem;
-  background-color: aqua;
-  /* margin-bottom: 15px; */
-  background-size: cover;
-  border-radius: 8px;
-}
-
-.card-1 {
-  background-image: url(https://www.usatoday.com/gcdn/-mm-/cba1df28e33b74b8a16727850b486e6eb97c7c90/c=0-691-4148-3035/local/-/media/2017/06/16/USATODAY/USATODAY/636332129259357428-AP-Airlines-Cheaper-Fuel.jpg?width=3200&height=1809&fit=crop&format=pjpg&auto=webp);
-}
-
-.card-2 {
-  background-image: url(https://media.cntraveler.com/photos/57c48e1b65e6586e551da534/master/pass/luggage-loading-plane-GettyImages-458222325.jpg);
-}
-
-.card-3 {
-  background-image: url(https://www.oxfordsaudia.com/wp-content/uploads/2018/07/banner-airplane-628x439.jpg);
-}
-
-.card-4 {
-  background-image: url(https://t3.ftcdn.net/jpg/02/39/48/90/360_F_239489017_dVQ3GqwS28SMNerVR5rY7EdJqT6t326X.jpg);
-}
-
+/* GSE */
 .card-5 {
   background-image: url(https://victorygse.com/wp-content/uploads/2019/11/victory_gse.jpg);
 }
 
+/* Flight Permits */
+.card-3 {
+  background-image: url(https://www.oxfordsaudia.com/wp-content/uploads/2018/07/banner-airplane-628x439.jpg);
+}
+
+/* Refueling */
+.card-1 {
+  background-image: url(https://www.usatoday.com/gcdn/-mm-/cba1df28e33b74b8a16727850b486e6eb97c7c90/c=0-691-4148-3035/local/-/media/2017/06/16/USATODAY/USATODAY/636332129259357428-AP-Airlines-Cheaper-Fuel.jpg?width=3200&height=1809&fit=crop&format=pjpg&auto=webp);
+}
+
+/* Ground Handling */
+.card-2 {
+  background-image: url(https://media.cntraveler.com/photos/57c48e1b65e6586e551da534/master/pass/luggage-loading-plane-GettyImages-458222325.jpg);
+}
+
+/* Charter Services */
+.card-4 {
+  background-image: url(https://t3.ftcdn.net/jpg/02/39/48/90/360_F_239489017_dVQ3GqwS28SMNerVR5rY7EdJqT6t326X.jpg);
+}
+
+/* Aviation Spare Parts */
 .card-6 {
   background-image: url(https://www.euractiv.com/wp-content/uploads/sites/2/2020/12/50587467542_ec541c1b0d_k-800x450.jpg);
 }
