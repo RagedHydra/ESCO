@@ -142,7 +142,7 @@ header {
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(https://www.oceanindependence.com/sites/default/files/images/aviation/Booking%20a%20private%20jet-min.jpg);
+    url(/images/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -185,7 +185,7 @@ header {
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(https://www.oceanindependence.com/sites/default/files/images/aviation/Booking%20a%20private%20jet-min.jpg);
+      url(/images/hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -267,8 +267,8 @@ header {
   /* margin: 2rem; */
   flex-direction: row;
   flex-wrap: wrap;
-  height: 300px;
-  width: 800px;
+  height: auto;
+  width: 70%;
 }
 
 @media only screen and (max-width: 450px) {
@@ -284,11 +284,11 @@ header {
     flex-direction: column;
   }
 
-   .client-img > img {
+  .client-img > img {
     /* margin: 2rem; */
     flex-direction: row;
     flex-wrap: wrap;
-    height: 9rem;
+    height: 8rem;
     width: 18rem;
   }
 }
@@ -299,7 +299,7 @@ header {
       rgba(27, 40, 69, 0.8),
       rgba(27, 40, 69, 0.8)
     ),
-    url(https://s28477.pcdn.co/wp-content/uploads/2018/02/KEF_1-984x554.jpg);
+    url(/images/footer.jpg);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;

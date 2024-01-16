@@ -139,7 +139,7 @@ header {
 /* HERO */
 #hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(https://www.oceanindependence.com/sites/default/files/images/aviation/Booking%20a%20private%20jet-min.jpg);
+    url(/images/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,32 +253,32 @@ button > a {
 
 /* GSE */
 .card-5 {
-  background-image: url(https://victorygse.com/wp-content/uploads/2019/11/victory_gse.jpg);
+  background-image: url(/images/GSE.jpg);
 }
 
 /* Flight Permits */
 .card-3 {
-  background-image: url(https://www.oxfordsaudia.com/wp-content/uploads/2018/07/banner-airplane-628x439.jpg);
+  background-image: url(/images/permits.jpg);
 }
 
 /* Refueling */
 .card-1 {
-  background-image: url(https://www.usatoday.com/gcdn/-mm-/cba1df28e33b74b8a16727850b486e6eb97c7c90/c=0-691-4148-3035/local/-/media/2017/06/16/USATODAY/USATODAY/636332129259357428-AP-Airlines-Cheaper-Fuel.jpg?width=3200&height=1809&fit=crop&format=pjpg&auto=webp);
+  background-image: url(/images/fueling.webp);
 }
 
 /* Ground Handling */
 .card-2 {
-  background-image: url(https://media.cntraveler.com/photos/57c48e1b65e6586e551da534/master/pass/luggage-loading-plane-GettyImages-458222325.jpg);
+  background-image: url(/images/ground_handling.webp);
 }
 
 /* Charter Services */
 .card-4 {
-  background-image: url(https://t3.ftcdn.net/jpg/02/39/48/90/360_F_239489017_dVQ3GqwS28SMNerVR5rY7EdJqT6t326X.jpg);
+  background-image: url(/images/charter.jpg);
 }
 
 /* Aviation Spare Parts */
 .card-6 {
-  background-image: url(https://www.euractiv.com/wp-content/uploads/sites/2/2020/12/50587467542_ec541c1b0d_k-800x450.jpg);
+  background-image: url(/images/spare_parts.jpg);
 }
 
 @media only screen and (max-width: 450px) {
@@ -361,8 +361,8 @@ button > a {
   /* margin: 2rem; */
   flex-direction: row;
   flex-wrap: wrap;
-  height: 300px;
-  width: 800px;
+  height: auto;
+  width: 70%;
 }
 
 @media only screen and (max-width: 450px) {
@@ -382,7 +382,7 @@ button > a {
     /* margin: 2rem; */
     flex-direction: row;
     flex-wrap: wrap;
-    height: 9rem;
+    height: 8rem;
     width: 18rem;
   }
 }
@@ -393,7 +393,7 @@ button > a {
       rgba(27, 40, 69, 0.8),
       rgba(27, 40, 69, 0.8)
     ),
-    url(https://s28477.pcdn.co/wp-content/uploads/2018/02/KEF_1-984x554.jpg);
+    url(/images/footer.jpg);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
